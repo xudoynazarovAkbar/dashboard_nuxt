@@ -1,0 +1,27 @@
+{
+  "welcome": "Xush kelibsiz",
+  "home": "Bosh sahifa",
+  "posts": "Postlar",
+  "create-post": "Post yaratish",
+  "create-admin": "Admin yaratish",
+  "manage-admins": "Adminlarni boshqarish",
+  "admins-list": "Adminlar ro'yhati",
+  "login": "Kirish",
+  "logout": "Chiqish",
+  "errors": {
+    "required": "Bu maydon to‘ldirilishi shart",
+    "min": "Kamida 8 ta belgi bo‘lishi kerak"
+  },
+  "form": {
+    "submit": "Yuborish",
+    "loading": "Yuborilmoqda...",
+    "password": "Parol",
+    "username": "Foydalanuvchi nomi"
+  },
+  "actions": {
+    "edit": "O'zgartirish",
+    "delete": "O'chirish",
+    "create": "Yaratish",
+    "cancel": "Orqaga"
+  }
+}

@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+:root {
+  --white: #fff;
+  --background: #fafafa;
+  --text: #494c6b;
+  --greys: #d1d2da;
+  --secondary-color: #9495a5;
+  --placeholder: #9495a5;
+  --color: #e3e4f1;
+  --shadow: #47486280;
+  --active: #3a7cfd;
+  --danger: #e5382c;
+  --success: #28a745;
+  --warning: #deba0f;
+}
+
+.page-wrapper.dark {
+  --background: #171823;
+  --text: #c8cbe7;
+  --greys: #4d5067;
+  --secondary-color: #5b5e7e;
+  --placeholder: #767992;
+  --color: #393a4b;
+  --shadow: #00000080;
+}
+
+html,
+body,
+#__nuxt {
+  @apply h-full;
+}
+
+.page-wrapper {
+  @apply flex overflow-hidden min-h-dvh transition-colors duration-200 bg-(--background) text-(--text);
+}
+
+.main {
+  @apply grow;
+}
+
+.custom-container {
+  max-width: 900px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  width: 100%;
+}

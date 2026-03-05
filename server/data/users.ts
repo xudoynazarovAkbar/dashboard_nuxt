@@ -1,0 +1,36 @@
+import { v4 as uuid } from 'uuid'
+
+export const users = [
+  { id: uuid(), username: 'directorAnna', password: 'directorAnna', role: 'director' },
+  { id: uuid(), username: 'directorMike', password: 'directorMike', role: 'director' },
+
+  { id: uuid(), username: 'adminTom', password: 'adminTom', role: 'admin' },
+  { id: uuid(), username: 'adminLisa', password: 'adminLisa', role: 'admin' },
+  { id: uuid(), username: 'adminJohn', password: 'adminJohn', role: 'admin' },
+  { id: uuid(), username: 'adminSara', password: 'adminSara', role: 'admin' },
+  { id: uuid(), username: 'adminAlex', password: 'adminAlex', role: 'admin' },
+  { id: uuid(), username: 'adminNina', password: 'adminNina', role: 'admin' },
+  { id: uuid(), username: 'adminLeo', password: 'adminLeo', role: 'admin' },
+  { id: uuid(), username: 'adminEva', password: 'adminEva', role: 'admin' },
+
+  { id: uuid(), username: 'userTom', password: 'userTom', role: 'user' },
+  { id: uuid(), username: 'userLisa', password: 'userLisa', role: 'user' },
+  { id: uuid(), username: 'userJohn', password: 'userJohn', role: 'user' },
+  { id: uuid(), username: 'userSara', password: 'userSara', role: 'user' },
+  { id: uuid(), username: 'userAlex', password: 'userAlex', role: 'user' },
+  { id: uuid(), username: 'userNina', password: 'userNina', role: 'user' },
+  { id: uuid(), username: 'userLeo', password: 'userLeo', role: 'user' },
+  { id: uuid(), username: 'userEva', password: 'userEva', role: 'user' },
+  { id: uuid(), username: 'userMia', password: 'userMia', role: 'user' },
+  { id: uuid(), username: 'userNoah', password: 'userNoah', role: 'user' },
+  { id: uuid(), username: 'userLiam', password: 'userLiam', role: 'user' },
+  { id: uuid(), username: 'userEmma', password: 'userEmma', role: 'user' },
+  { id: uuid(), username: 'userOlivia', password: 'userOlivia', role: 'user' },
+  { id: uuid(), username: 'userAva', password: 'userAva', role: 'user' },
+  { id: uuid(), username: 'userSophia', password: 'userSophia', role: 'user' },
+  { id: uuid(), username: 'userMason', password: 'userMason', role: 'user' },
+  { id: uuid(), username: 'userEthan', password: 'userEthan', role: 'user' },
+  { id: uuid(), username: 'userIsabella', password: 'userIsabella', role: 'user' },
+  { id: uuid(), username: 'userLucas', password: 'userLucas', role: 'user' },
+  { id: uuid(), username: 'userAmelia', password: 'userAmelia', role: 'user' },
+]

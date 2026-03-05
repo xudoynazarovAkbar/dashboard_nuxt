@@ -1,0 +1,27 @@
+{
+  "welcome": "Welcome",
+  "home": "Home",
+  "posts": "Posts",
+  "create-post": "Create a Post",
+  "create-admin": "Create an Admin",
+  "manage-admins": "Manage Admins",
+  "admins-list": "List of Admins",
+  "login": "Log in",
+  "logout": "Log out",
+  "errors": {
+    "required": "This field is required",
+    "min": "At least 8 characters"
+  },
+  "form": {
+    "submit": "Submit",
+    "loading": "Submitting...",
+    "password": "Password",
+    "username": "Username"
+  },
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "create": "Create",
+    "cancel": "Cancel"
+  }
+}

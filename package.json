@@ -1,0 +1,29 @@
+{
+  "name": "dashboard_nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/i18n": "^10.2.3",
+    "@tailwindcss/vite": "^4.2.1",
+    "nuxt": "^4.3.1",
+    "tailwindcss": "^4.2.1",
+    "uuid": "^13.0.0",
+    "vee-validate": "^4.15.1",
+    "vue": "^3.5.29",
+    "vue-router": "^4.6.4",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "sass-embedded": "^1.97.3"
+  }
+}
