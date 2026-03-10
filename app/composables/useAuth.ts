@@ -8,7 +8,8 @@ export const useAuth = () => {
 	const isLoggedIn = computed(() => !!user.value)
 	
 	const fetchUser = async () => {
-		const res = await $fetch<MeResponse>('/api/me')
+		const headers = useRequestHeaders(['cookie'])
+		const res = await $fetch<MeResponse>('/api/me', {headers})
 		
 		if (!res.authenticated) {
 			user.value = null
