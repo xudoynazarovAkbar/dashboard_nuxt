@@ -1,11 +1,9 @@
 import type { User } from '#shared/types/models'
 
-export interface MeResponse {
-  authenticated: boolean
-  user?: User
-}
+export type MeResponse =
+  | { authenticated: true; user: User }
+  | { authenticated: false; user?: never }
 
-export interface LoginResponse {
-  success: boolean
-  user?: User
-}
+export type AuthActionResponse =
+  | { success: true; user: User }
+  | { success: false; message: string }

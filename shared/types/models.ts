@@ -2,7 +2,9 @@ import type { Role } from '#shared/types/roles'
 
 export interface User {
   id: string
-  username: string
+	firstName: string
+	lastName: string
+  email: string
   role: Role
 }
 

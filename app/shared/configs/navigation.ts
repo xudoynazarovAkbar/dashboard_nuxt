@@ -10,21 +10,21 @@ export const NAV_ITEMS: NavItem[] = [
   {
     labelKey: 'home',
     path: '/',
-    roles: ['user', 'admin', 'director'],
+    roles: [ROLES.USER, ROLES.ADMIN, ROLES.DIRECTOR],
   },
   {
     labelKey: 'posts',
     path: '/posts',
-    roles: ['user', 'admin', 'director'],
+    roles: [ROLES.USER, ROLES.ADMIN, ROLES.DIRECTOR],
   },
   {
     labelKey: 'create-post',
     path: '/create-post',
-    roles: ['admin', 'director'],
+    roles: [ROLES.ADMIN, ROLES.DIRECTOR],
   },
   {
     labelKey: 'manage-admins',
     path: '/manage-admins',
-    roles: ['director'],
+    roles: [ROLES.DIRECTOR],
   },
 ]

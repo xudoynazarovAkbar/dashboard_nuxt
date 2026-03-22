@@ -6,12 +6,6 @@
   "create-admin": "Create an Admin",
   "manage-admins": "Manage Admins",
   "admins-list": "List of Admins",
-  "login": "Log in",
-  "logout": "Log out",
-  "errors": {
-    "required": "This field is required",
-    "min": "At least 8 characters"
-  },
   "form": {
     "submit": "Submit",
     "loading": "Submitting...",
@@ -23,5 +17,19 @@
     "delete": "Delete",
     "create": "Create",
     "cancel": "Cancel"
-  }
+  },
+	"auth": {
+		"signin": "Sign in",
+		"signup": "Create account",
+		"or": "or"
+	},
+	"validation": {
+      "required": "This field is required.",
+      "min_8": "Must be at least 8 characters.",
+      "max_60": "Cannot exceed 60 characters.",
+      "email": "Please enter a valid email address.",
+      "letters_spaces": "Only letters and spaces are allowed.",
+      "password":
+        "At least one uppercase letter, one lowercase letter, and one number."
+    }
 }

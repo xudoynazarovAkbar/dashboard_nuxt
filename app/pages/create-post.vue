@@ -18,7 +18,7 @@ import { ref } from 'vue'
 
 definePageMeta({
   middleware: ['role'],
-  roles: ['admin', 'director'],
+  roles: [ROLES.ADMIN, ROLES.DIRECTOR],
 })
 const newPost = ref({
   title: '',

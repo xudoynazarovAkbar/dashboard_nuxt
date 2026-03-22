@@ -1,4 +1,4 @@
 export default defineEventHandler((event) => {
-  setCookie(event, 'auth_user', '', { maxAge: 0 })
+  deleteCookie(event, 'auth_user')
   return { success: true }
 })

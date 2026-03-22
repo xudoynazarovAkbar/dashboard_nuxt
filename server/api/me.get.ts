@@ -7,5 +7,14 @@ export default defineEventHandler((event) => {
   const user = users.find((u) => u.id === userId)
   if (!user) return { authenticated: false }
 
-  return { authenticated: true, user: { id: user.id, username: user.username, role: user.role } }
+  return {
+    authenticated: true,
+    user: {
+      id: user.id,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      email: user.email,
+      role: user.role,
+    }
+  }
 })

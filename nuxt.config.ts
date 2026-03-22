@@ -2,11 +2,12 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
+	compatibilityDate: '2025-07-15',
+  devtools: { enabled: true },
+	
   vue: {
     propsDestructure: true,
   },
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
 
   vite: {
     plugins: [tailwindcss() as any],
@@ -23,6 +24,7 @@ export default defineNuxtConfig({
   },
 
   modules: ['@nuxt/image', '@nuxtjs/i18n'],
+
   i18n: {
     strategy: 'no_prefix',
     defaultLocale: 'en',

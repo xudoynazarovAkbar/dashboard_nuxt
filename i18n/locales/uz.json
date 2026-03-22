@@ -8,10 +8,6 @@
   "admins-list": "Adminlar ro'yhati",
   "login": "Kirish",
   "logout": "Chiqish",
-  "errors": {
-    "required": "Bu maydon to‘ldirilishi shart",
-    "min": "Kamida 8 ta belgi bo‘lishi kerak"
-  },
   "form": {
     "submit": "Yuborish",
     "loading": "Yuborilmoqda...",
@@ -23,5 +19,19 @@
     "delete": "O'chirish",
     "create": "Yaratish",
     "cancel": "Orqaga"
-  }
+  },
+	"auth": {
+		"signin": "Akkauntga kirish",
+		"signup": "Yangi akkaunt yaratish",
+		"or": "yoki"
+	},
+	"validation": {
+      "required": "Bu maydon to'ldirilishi shart.",
+      "min_8": "Kamida 8 ta belgi bo'lishi kerak.",
+      "max_60": "60 ta belgidan oshmasligi kerak.",
+      "email": "Iltimos, to'g'ri elektron pochta manzilini kiriting.",
+      "letters_spaces": "Faqat harflar va bo'shliqlar ruxsat etiladi.",
+      "password":
+        "Kamida bitta katta harf, bitta kichik harf va bitta raqam"
+    }
 }
