@@ -8,23 +8,33 @@ export interface NavItem {
 
 export const NAV_ITEMS: NavItem[] = [
   {
-    labelKey: 'home',
+    labelKey: 'navigation.home',
     path: '/',
-    roles: ['user', 'admin', 'director'],
+    roles: [ROLES.USER, ROLES.ADMIN, ROLES.DIRECTOR],
   },
   {
-    labelKey: 'posts',
+    labelKey: 'navigation.posts',
     path: '/posts',
-    roles: ['user', 'admin', 'director'],
+    roles: [ROLES.USER, ROLES.ADMIN, ROLES.DIRECTOR],
   },
   {
-    labelKey: 'create-post',
+    labelKey: 'navigation.createPost',
     path: '/create-post',
-    roles: ['admin', 'director'],
+    roles: [ROLES.ADMIN, ROLES.DIRECTOR],
   },
   {
-    labelKey: 'manage-admins',
+    labelKey: 'navigation.manageAdmins',
     path: '/manage-admins',
-    roles: ['director'],
+    roles: [ROLES.DIRECTOR],
   },
+	{
+		labelKey: 'navigation.restaurants',
+		path: '/restaurants',
+		roles: [ROLES.USER, ROLES.ADMIN, ROLES.DIRECTOR]
+	},
+	{
+		labelKey: 'navigation.cart',
+		path: '/cart',
+		roles: [ROLES.USER, ROLES.ADMIN, ROLES.DIRECTOR]
+	}
 ]

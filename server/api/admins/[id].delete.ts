@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
     })
   }
 
-  const index = users.findIndex((u) => u.id === id && u.role === 'admin')
+  const index = users.findIndex((u) => u.id === id && u.role === ROLES.ADMIN)
 
   if (index === -1) {
     throw createError({

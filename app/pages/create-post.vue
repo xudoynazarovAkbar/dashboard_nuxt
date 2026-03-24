@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-5xl">{{ $t('create-post') }}</h1>
+    <CustomTitle type="large">{{ $t('navigation.createPost') }}</CustomTitle>
     <div class="flex flex-col gap-y-3 mt-5">
       <CustomInput v-model="newPost.title" />
       <CustomInput v-model="newPost.body" />
@@ -18,7 +18,7 @@ import { ref } from 'vue'
 
 definePageMeta({
   middleware: ['role'],
-  roles: ['admin', 'director'],
+  roles: [ROLES.ADMIN, ROLES.DIRECTOR],
 })
 const newPost = ref({
   title: '',

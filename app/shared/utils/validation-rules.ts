@@ -1,0 +1,30 @@
+import * as yup from "yup";
+import { LETTERS_AND_SPACES_REGEX, PASSWORD_STRENGTH_REGEX } from "../constants/regex";
+
+export function buildYupRules(t: (key: string) => string) {
+  return {
+    baseString: yup
+      .string()
+      .required(t("validation.required"))
+      .max(60, t("validation.max60")),
+ 
+    lettersAndSpaces: yup
+      .string()
+      .required(t("validation.required"))
+      .max(60, t("validation.max60"))
+      .matches(LETTERS_AND_SPACES_REGEX, t("validation.lettersSpaces")),
+ 
+    email: yup
+      .string()
+      .required(t("validation.required"))
+      .email(t("validation.email"))
+      .max(60, t("validation.max60")),
+ 
+    password: yup
+      .string()
+      .required(t("validation.required"))
+      .min(8, t("validation.min8"))
+      .max(60, t("validation.max60"))
+      .matches(PASSWORD_STRENGTH_REGEX, t("validation.password")),
+  } as const;
+}

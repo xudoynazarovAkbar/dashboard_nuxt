@@ -1,47 +1,87 @@
 <template>
   <div>
-    <h1 class="text-4xl">{{ $t('create-admin') }}</h1>
-    <div class="flex flex-col gap-y-3 mt-5">
-      <CustomInput
-        v-model="newAdmin.username"
-        placeholder="Username"
-      />
-      <CustomInput
-        v-model="newAdmin.password"
-        placeholder="Password"
-        type="password"
-      />
-      <div class="w-full flex justify-end">
-        <CustomButton @click="onCreate">{{ $t('actions.create') }}</CustomButton>
+    <h1 class="text-4xl">{{ $t('admin.createAdmin') }}</h1>
+    <Form
+      ref="formRef"
+      @submit="onSubmit as SubmissionHandler"
+      :validation-schema="signUpSchema"
+      v-slot="{ meta }"
+      class="flex flex-col gap-y-3 mt-5"
+    >
+      <Field name="firstName" v-slot="{ field, errorMessage }">
+        <CustomInput
+          v-bind="field"
+          placeholder="John"
+          label="First Name"
+          :error="errorMessage"
+        />
+      </Field>
+
+      <Field name="lastName" v-slot="{ field, errorMessage }">
+        <CustomInput
+          v-bind="field"
+          placeholder="Doe"
+          label="Last Name"
+          :error="errorMessage"
+        />
+      </Field>
+
+      <Field name="email" v-slot="{ field, errorMessage }">
+        <CustomInput
+          v-bind="field"
+          type="email"
+          placeholder="john.doe@example.com"
+          label="Email Address"
+          :error="errorMessage"
+        />
+      </Field>
+
+      <Field name="password" v-slot="{ field, errorMessage }">
+        <CustomInput
+          v-bind="field"
+          :type="showPassword ? 'text' : 'password'"
+          placeholder="Password"
+          label="Password"
+          :error="errorMessage"
+        >
+          <button type="button" @click="handleEyeToggle">
+            {{ eyeText }}
+          </button>
+        </CustomInput>
+      </Field>
+
+      <div class="w-full flex justify-end mt-4">
+        <CustomButton type="submit" :disabled="isLoading || !meta.valid">
+          {{ buttonText }}
+        </CustomButton>
       </div>
-    </div>
+    </Form>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { Form, Field, type SubmissionHandler, type FormContext } from 'vee-validate'
 
-const emit = defineEmits<{ (e: 'created'): void }>()
+const formRef = ref<FormContext | null>(null)
 
-const newAdmin = ref({
-  username: '',
-  password: '',
+const { optimisticCreate } = useAdmins()
+const {
+  eyeText,
+  isLoading,
+  buttonText,
+  showPassword,
+  signUpSchema,
+  handleSignUp,
+  handleEyeToggle,
+} = useForm()
+
+const onSubmit = handleSignUp(ROLES.ADMIN, {
+  onSuccess: async (values) => {
+    await optimisticCreate({ ...values, role: ROLES.ADMIN })
+    formRef.value?.resetForm()
+  },
+  onError: async () => {
+    await refreshNuxtData('admins')
+  },
 })
-
-const onCreate = async () => {
-  if (!newAdmin.value.username || !newAdmin.value.password) {
-    alert('Username and password required')
-    return
-  }
-
-  try {
-    await $fetch('/api/admins', { method: 'POST', body: newAdmin.value })
-    emit('created')
-  } catch (err) {
-    console.error('Failed to create admin', err)
-  } finally {
-    newAdmin.value.username = ''
-    newAdmin.value.password = ''
-  }
-}
 </script>
