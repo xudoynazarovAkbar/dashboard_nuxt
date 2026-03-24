@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid'
 
 export const users = [
-  { id: uuid(), firstName: 'Anna', lastName: 'Kuznetsova', email: 'anna.kuznetsova@example.com', password: 'directorAnna1', role: ROLES.DIRECTOR },
+  { id: uuid(), firstName: 'Akbar', lastName: 'Xudoynazarov', email: 'aaakbar3101@gmail.com', password: 'Akbar3101', role: ROLES.DIRECTOR },
   { id: uuid(), firstName: 'Michael', lastName: 'Anderson', email: 'michael.anderson@example.com', password: 'directorMike1', role: ROLES.DIRECTOR },
 
   { id: uuid(), firstName: 'Tom', lastName: 'Harris', email: 'tom.harris@example.com', password: 'adminTom123', role: ROLES.ADMIN },

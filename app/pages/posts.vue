@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="text-5xl">{{ $t('posts') }}</h1>
+    <CustomTitle type="large">{{ $t('navigation.posts') }}</CustomTitle>
     <div class="mt-4">
-      <h4 v-if="pending">Loading ...</h4>
+      <h4 v-if="pending">{{ $t('common.loading') }}</h4>
       <PostsList
         :data="data"
         v-else

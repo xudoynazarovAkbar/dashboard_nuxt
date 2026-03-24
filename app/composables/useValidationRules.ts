@@ -6,12 +6,12 @@ export function useValidationRules() {
   const { t } = useI18n();
  
   defineRule("min_8", (value: string) => {
-    if (!value || value.length < 8) return t("validation.min_8");
+    if (!value || value.length < 8) return t("validation.min8");
     return true;
   });
 
   defineRule("max_60", (value: string) => {
-    if (value && value.length > 60) return t("validation.max_60");
+    if (value && value.length > 60) return t("validation.max60");
     return true;
   });
 
@@ -23,7 +23,7 @@ export function useValidationRules() {
 
   defineRule("letters_spaces", (value: string) => {
     if (value && !LETTERS_AND_SPACES_REGEX.test(value))
-      return t("validation.letters_spaces");
+      return t("validation.lettersSpaces");
     return true;
   });
 
