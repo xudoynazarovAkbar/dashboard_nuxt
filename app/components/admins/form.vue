@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-4xl">{{ $t('create-admin') }}</h1>
+    <h1 class="text-4xl">{{ $t('admin.createAdmin') }}</h1>
     <Form
       ref="formRef"
       @submit="onSubmit as SubmissionHandler"

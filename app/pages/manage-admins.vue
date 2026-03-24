@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-5xl">{{ $t('manage-admins') }}</h1>
+    <CustomTitle type="large">{{ $t('navigation.manageAdmins') }}</CustomTitle>
     <AdminsForm class="mt-5" />
     <AdminsList class="mt-5" />
   </div>

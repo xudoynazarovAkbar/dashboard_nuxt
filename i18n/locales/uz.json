@@ -1,13 +1,57 @@
 {
   "welcome": "Xush kelibsiz",
-  "home": "Bosh sahifa",
-  "posts": "Postlar",
-  "create-post": "Post yaratish",
-  "create-admin": "Admin yaratish",
-  "manage-admins": "Adminlarni boshqarish",
-  "admins-list": "Adminlar ro'yhati",
-  "login": "Kirish",
-  "logout": "Chiqish",
+  "navigation": {
+    "home": "Bosh sahifa",
+    "posts": "Postlar",
+    "createPost": "Post yaratish",
+    "manageAdmins": "Adminlarni boshqarish",
+    "restaurants": "Restoranlar",
+    "cart": "Savat"
+  },
+  "admin": {
+    "createAdmin": "Admin yaratish",
+    "adminsList": "Adminlar ro'yxati"
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "noProducts": "Mahsulotlar yo'q",
+    "logout": "Chiqish"
+  },
+  "cart": {
+    "empty": {
+      "title": "Savat bo'sh",
+      "description": "Hali hech narsa qo'shilmagan",
+      "browseButton": "Restoranlarni ko'rish"
+    },
+    "orderFrom": "Buyurtma berish",
+    "clearCart": "Savatni tozalash",
+    "addMore": "Buyurtmangizga qo'shish?",
+    "summary": {
+      "title": "Buyurtma xulosasi",
+      "products": "Mahsulotlar ({count} ta)",
+      "delivery": "Yetkazib berish",
+      "free": "Bepul",
+      "total": "Jami"
+    },
+    "checkout": "Buyurtma berish",
+    "backToRestaurant": "Restoranga qaytish",
+    "addToCartWithPrice": "Savatga qo'shish · {price}",
+    "modal": {
+      "addToCart": "Savatga qo'shish"
+    },
+    "clearModal": {
+      "title": "Savatni tozalash",
+      "description": "Barcha mahsulotlar savatdan o'chiriladi. Davom etasizmi?",
+      "cancel": "Bekor qilish",
+      "confirm": "Ha, tozalash"
+    },
+    "conflictModal": {
+      "title": "Savat tozalanadi",
+      "description": "Siz boshqa restorandan mahsulot qo'shmoqchisiz. Amaldagi savat o'chiriladi. Davom etasizmi?",
+      "cancel": "Bekor qilish",
+      "confirm": "Ha, davom etish"
+    }
+  },
   "form": {
     "submit": "Yuborish",
     "loading": "Yuborilmoqda...",
@@ -15,23 +59,26 @@
     "username": "Foydalanuvchi nomi"
   },
   "actions": {
-    "edit": "O'zgartirish",
+    "edit": "Tahrirlash",
     "delete": "O'chirish",
     "create": "Yaratish",
-    "cancel": "Orqaga"
+    "cancel": "Bekor qilish"
   },
-	"auth": {
-		"signin": "Akkauntga kirish",
-		"signup": "Yangi akkaunt yaratish",
-		"or": "yoki"
-	},
-	"validation": {
-      "required": "Bu maydon to'ldirilishi shart.",
-      "min_8": "Kamida 8 ta belgi bo'lishi kerak.",
-      "max_60": "60 ta belgidan oshmasligi kerak.",
-      "email": "Iltimos, to'g'ri elektron pochta manzilini kiriting.",
-      "letters_spaces": "Faqat harflar va bo'shliqlar ruxsat etiladi.",
-      "password":
-        "Kamida bitta katta harf, bitta kichik harf va bitta raqam"
-    }
+  "auth": {
+    "signin": "Kirish",
+    "signup": "Hisob yaratish",
+    "or": "yoki"
+  },
+  "validation": {
+    "required": "Bu maydon to'ldirilishi shart.",
+    "min8": "Kamida 8 ta belgi bo'lishi kerak.",
+    "max60": "60 ta belgidan oshmasligi kerak.",
+    "email": "Iltimos, to'g'ri email manzil kiriting.",
+    "lettersSpaces": "Faqat harflar va bo'shliqlar ruxsat etiladi.",
+    "password": "Kamida bitta katta harf, bitta kichik harf va bitta raqam bo'lishi kerak."
+  },
+	"theme": {
+		"dark": "Tungi", 
+		"light": "Kunduzgi"
+	}
 }

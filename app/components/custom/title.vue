@@ -20,7 +20,7 @@ defineProps<{
 }
 .large {
   font-weight: 300;
-  font-size: clamp(20px, 5.5vw, 32px);
+  font-size: clamp(24px, 5.5vw, 48px);
   letter-spacing: -0.02em;
 }
 .medium {

@@ -1,4 +1,4 @@
-export type Role = typeof ROLES.USER | typeof ROLES.ADMIN | typeof ROLES.DIRECTOR
+export type Role = typeof ROLES[keyof typeof ROLES]
 
 export const ROLES = {
   USER: 'user',

@@ -1,11 +1,57 @@
 {
   "welcome": "Welcome",
-  "home": "Home",
-  "posts": "Posts",
-  "create-post": "Create a Post",
-  "create-admin": "Create an Admin",
-  "manage-admins": "Manage Admins",
-  "admins-list": "List of Admins",
+  "navigation": {
+    "home": "Home",
+    "posts": "Posts",
+    "createPost": "Create a Post",
+    "manageAdmins": "Manage Admins",
+    "restaurants": "Restaurants",
+    "cart": "Shopping Cart"
+  },
+  "admin": {
+    "createAdmin": "Create an Admin",
+    "adminsList": "List of Admins"
+  },
+  "common": {
+    "loading": "Loading...",
+    "noProducts": "No products",
+    "logout": "Log out"
+  },
+  "cart": {
+    "empty": {
+      "title": "Cart is empty",
+      "description": "Nothing has been added yet",
+      "browseButton": "Browse restaurants"
+    },
+    "orderFrom": "Ordering from",
+    "clearCart": "Clear cart",
+    "addMore": "Add more to your order?",
+    "summary": {
+      "title": "Order summary",
+      "products": "Products ({count} items)",
+      "delivery": "Delivery",
+      "free": "Free",
+      "total": "Total"
+    },
+    "checkout": "Place order",
+    "backToRestaurant": "Back to restaurant",
+    "modal": {
+      "addToCart": "Add to cart"
+    },
+    "clearModal": {
+      "title": "Clear cart",
+      "description": "All products will be removed from the cart. Continue?",
+      "cancel": "Cancel",
+      "confirm": "Yes, clear"
+    },
+    "addToCartWithPrice": "Add to cart · {price}",
+    "conflictModal": {
+      "title": "Cart will be cleared",
+      "description": "You are adding a product from a different restaurant. Your current cart will be cleared. Do you want to continue?",
+      "cancel": "Cancel",
+      "confirm": "Yes, continue"
+    }
+  },
   "form": {
     "submit": "Submit",
     "loading": "Submitting...",
@@ -18,18 +64,21 @@
     "create": "Create",
     "cancel": "Cancel"
   },
-	"auth": {
-		"signin": "Sign in",
-		"signup": "Create account",
-		"or": "or"
-	},
-	"validation": {
-      "required": "This field is required.",
-      "min_8": "Must be at least 8 characters.",
-      "max_60": "Cannot exceed 60 characters.",
-      "email": "Please enter a valid email address.",
-      "letters_spaces": "Only letters and spaces are allowed.",
-      "password":
-        "At least one uppercase letter, one lowercase letter, and one number."
-    }
+  "auth": {
+    "signin": "Sign in",
+    "signup": "Create account",
+    "or": "or"
+  },
+  "validation": {
+    "required": "This field is required.",
+    "min8": "Must be at least 8 characters.",
+    "max60": "Cannot exceed 60 characters.",
+    "email": "Please enter a valid email address.",
+    "lettersSpaces": "Only letters and spaces are allowed.",
+    "password": "At least one uppercase letter, one lowercase letter, and one number."
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  }
 }

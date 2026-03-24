@@ -13,12 +13,3 @@ const { optimisticDelete } = useAdmins()
 
 const onDelete = () => optimisticDelete(props.id)
 </script>
-```
-
----
-
-The data flow is now very clean:
-```
-useFetch (page)  →  seeds 'admins' cache
-useNuxtData      →  any component reads the same cache
-optimisticCreate/Delete  →  mutate cache instantly, then refresh in background
