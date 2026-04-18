@@ -1,8 +1,10 @@
+import type { RestaurantsResponse } from '#shared/types/api-responses'
+
 export const useRestaurants = () => {
-	const { $api } = useNuxtApp()
+  const { $api } = useNuxtApp()
   const { data, status, error, refresh } = useAsyncData<RestaurantsResponse>(
     'restaurants',
-    () => $api('/restaurant')
+    () => $api<RestaurantsResponse>('/restaurant')
   )
 
   const restaurants = computed(() =>

@@ -1,3 +1,9 @@
+import type {
+  CategoriesResponse,
+  ProductsResponse,
+  RestaurantsResponse,
+} from '#shared/types/api-responses'
+
 export const useRestaurant = (slugArg?: string) => {
   const { $api } = useNuxtApp()
   const slug = slugArg ?? (useRoute().params.slug as string)

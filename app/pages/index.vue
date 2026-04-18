@@ -5,6 +5,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const random = JSON.parse(JSON.stringify({
+    text: "Hello world"
+  }))
+
+  console.log(random.text);
+  
+</script>
 
 <style scoped></style>

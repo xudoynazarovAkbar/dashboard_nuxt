@@ -2,13 +2,15 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-	compatibilityDate: '2025-07-15',
+  compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
   vue: {
     propsDestructure: true,
   },
-
+  typescript: {
+    typeCheck: true,
+  },
   vite: {
     plugins: [tailwindcss() as any],
   },
@@ -23,7 +25,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/image', '@nuxtjs/i18n','@vueuse/nuxt'],
+  modules: ['@nuxt/image', '@nuxtjs/i18n', '@vueuse/nuxt'],
 
   i18n: {
     strategy: 'no_prefix',
@@ -35,9 +37,9 @@ export default defineNuxtConfig({
     ],
   },
 
-	runtimeConfig: {
-		public: {
-			apiBase: ''
-		}
-	}
+  runtimeConfig: {
+    public: {
+      apiBase: '',
+    },
+  },
 })
